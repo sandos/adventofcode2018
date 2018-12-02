@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 f = open("adventofcode2018\\day02.input", "r")
 
 lines = f.readlines()
@@ -27,4 +29,25 @@ for l in lines:
     if add3:
         numOf3 += 1
 
-print numOf2 * numOf3
+print(numOf2 * numOf3)
+
+for l in lines:
+    for x in lines:
+        if l == x:
+            continue
+        
+        if len(l) != len(x):
+            continue
+
+        diffs = 0
+        for i in range(len(l)):
+            if l[i] != x[i]:
+                diffs += 1
+
+        if diffs == 1:
+            print("Correct: ", end='')
+            for i in range(len(l)):
+                if l[i] == x[i]:
+                    print(l[i], end='')
+            print(x)
+            
