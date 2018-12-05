@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+AdventOfCodeDotNet/Advent/obj
+AdventOfCodeDotNet/Advent/bin
+AdventOfCodeDotNet/bin
+AdventOfCodeDotNet/obj
+AdventOfCodeDotNet/AdventOfCode.v11.suo
+AdventOfCodeDotNet/Advent/*.suo
